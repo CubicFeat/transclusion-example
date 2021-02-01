@@ -1,0 +1,9 @@
+<h3>King Table II</h3>
+<table>
+  <app-container-with-drawer
+    *ngFor="let i of [4, 5, 6]"
+    panelTitle="Panel Title {{ i }}"
+  >
+    <div>Divs only! Panel {{ i }} Represent!</div>
+  </app-container-with-drawer>
+</table>

@@ -1,0 +1,10 @@
+<h3>King Table, first of his name</h3>
+
+<table>
+  <app-container-with-drawer
+    *ngFor="let i of [1, 2, 3]"
+    panelTitle="Panel title {{ i }}"
+  >
+    <app-tabbed-view [inputData]="i"></app-tabbed-view>
+  </app-container-with-drawer>
+</table>

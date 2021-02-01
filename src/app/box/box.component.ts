@@ -15,7 +15,7 @@ import { ListComponent } from '../list/list.component';
 export class BoxComponent implements OnInit, AfterContentInit {
   // @ContentChild('firstRef') first: ElementRef; // NOT a CSS selector
 
-  // @ContentChild(ListComponent) list: ListComponent;
+  @ContentChild(ListComponent) list: ListComponent;
 
   constructor() {}
 
@@ -23,6 +23,6 @@ export class BoxComponent implements OnInit, AfterContentInit {
 
   ngAfterContentInit(): void {
     // this.first.nativeElement.style.background = 'red';
-    // this.list.colorItRed = true;
+    this.list.colorItRed = true;
   }
 }
